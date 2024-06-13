@@ -1,0 +1,29 @@
+---
+import ExperienceItems from "./ExperienceItems.astro"
+
+const EXPERIENCE = [
+    {
+        date: 'May 2024',
+        title: 'NGO Un litro',
+        description: 'Over 200 hours of development. I had the chance to work on a Backend improving NestJS, TypeORM, Postgresql. Also I worked with Firebase to implement images and storage.',
+        link: 'https://https://litro-ong.vercel.app/',
+    },
+    {
+        date: 'July 2015 - Present',
+        title: 'Teacher at IT High School of Hurlingham, Argentina',
+        description: 'I have been working as a teacher for 9 years. I have been teaching subjects like Hardware lab, Operating System lab, Programming, Cybersecurity, Teleinformatics, etc.',
+        link: 'https://asset.cloudinary.com/dsiic5ax7/8af03b39ebade1d7ba42f346002182b6',
+    }
+]
+---
+
+<ol class="relative border-s border-gray-200 dark:border-gray-700 ml-3">
+    {
+        EXPERIENCE.map((experience) => (
+        <li class="mb-10 ms-4">
+            <ExperienceItems {...experience} />
+        </li>
+        ))
+    }               
+</ol>
+
