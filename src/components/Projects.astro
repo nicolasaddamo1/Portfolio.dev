@@ -3,7 +3,19 @@ import Github from "./icons/Github.astro";
 import Nestjs from "./icons/NestJs.astro";
 import Expressicon from "./icons/Expressicon.astro"
 import Firebase from "./icons/Firebase.astro"
+import Gitlab from "./icons/Gitlab.astro";
+import Discord from "./icons/Discord.astro";
 const TAGS = {
+    DISCORD: {
+        name:"Discord",
+        class:"rounded-full bg-gray-700 text-white size-7 p-1.5",
+        icon:Discord
+    },
+    GITLAB: {
+        name:"GitLab",
+        class:"rounded-full bg-gray-700 text-white size-7 p-1.5",
+        icon:Gitlab
+    },
     NEST: {
         name:"NextJS",
         class:"rounded-full bg-gray-700 text-white size-7 p-1.5",
@@ -21,6 +33,13 @@ const TAGS = {
     }
 }
 const PROJECTS=[
+    {
+        title:"Innevo FruitApp",
+        body:"This a part of a project developed at Innevo company. This is the model that I trained to recognize fruits and count them. I used Google Colab and Tensorflow.",
+        href: "/web personal.jpg",
+        github:"Private repo at GitLab",
+        tags:[TAGS.NEST,TAGS.GITLAB, TAGS.DISCORD]
+    },
     {
         title:"Un litro de leche alta gracia(Crons)",
         body:"This a part of a project developed as Final Project for SoyHenry Bootcamp. ",
