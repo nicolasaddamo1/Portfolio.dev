@@ -6,7 +6,13 @@ import Firebase from "./icons/Firebase.astro"
 import Gitlab from "./icons/Gitlab.astro";
 import Discord from "./icons/Discord.astro";
 import Postgresql from "./icons/Postgresql.astro";
+import Python from "./icons/Python.astro";
 const TAGS = {
+    PYTHON: {
+        name:"Python",
+        class:"rounded-full bg-gray-700 text-white size-7 p-1.5",
+        icon:Python
+    },
     PG: {
         name:"PostgreSQL",
         class:"rounded-full bg-gray-700 text-white size-7 p-1.5",
@@ -44,7 +50,12 @@ const PROJECTS=[
         body:"This a part of a project developed at Innevo company. This is the model that I trained to recognize fruits and count them. I used Google Colab and Tensorflow.",
         href: "/web personal.jpg",
         github:"Private repo at GitLab",
-        tags:[TAGS.NEST, TAGS.PG,TAGS.GITLAB, TAGS.DISCORD]
+        tags:[
+            TAGS.NEST,
+            TAGS.PG,TAGS.GITLAB,
+            TAGS.DISCORD,
+            TAGS.PYTHON
+        ]
     },
     {
         title:"Un litro de leche alta gracia(Crons)",
