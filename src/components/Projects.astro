@@ -9,7 +9,14 @@ import Postgresql from "./icons/Postgresql.astro";
 import Python from "./icons/Python.astro";
 import Flask from "./icons/Flask.astro";
 import Colab from "./icons/Colab.astro";
+import Trello from "./icons/Trello.astro";
+
 const TAGS = {
+    TRE: {
+        name:"Trello",
+        class:"rounded-full bg-gray-700 text-white size-7 p-1.5",
+        icon:Trello
+    },
     GC: {
         name:"Colab",
         class:"rounded-full bg-gray-700 text-white size-7 p-1.5",
@@ -64,10 +71,11 @@ const PROJECTS=[
         github:"Private repo at GitLab",
         tags:[
             TAGS.NEST,
-            TAGS.PG,TAGS.GITLAB,
-            TAGS.DISCORD,
+            TAGS.PG,
             TAGS.PYTHON,
             TAGS.FLASK,
+            TAGS.GITLAB,
+            TAGS.DISCORD,
             TAGS.GC
         ]
     },
