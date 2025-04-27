@@ -8,7 +8,13 @@ import Discord from "./icons/Discord.astro";
 import Postgresql from "./icons/Postgresql.astro";
 import Python from "./icons/Python.astro";
 import Flask from "./icons/Flask.astro";
+import Colab from "./icons/Colab.astro";
 const TAGS = {
+    GC: {
+        name:"Colab",
+        class:"rounded-full bg-gray-700 text-white size-7 p-1.5",
+        icon:Colab
+    },
     FLASK: {
         name:"Flask",
         class:"rounded-full bg-gray-700 text-white size-7 p-1.5",
@@ -61,7 +67,8 @@ const PROJECTS=[
             TAGS.PG,TAGS.GITLAB,
             TAGS.DISCORD,
             TAGS.PYTHON,
-            TAGS.FLASK
+            TAGS.FLASK,
+            TAGS.GC
         ]
     },
     {
