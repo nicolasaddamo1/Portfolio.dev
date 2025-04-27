@@ -7,7 +7,13 @@ import Gitlab from "./icons/Gitlab.astro";
 import Discord from "./icons/Discord.astro";
 import Postgresql from "./icons/Postgresql.astro";
 import Python from "./icons/Python.astro";
+import Flask from "./icons/Flask.astro";
 const TAGS = {
+    FLASK: {
+        name:"Flask",
+        class:"rounded-full bg-gray-700 text-white size-7 p-1.5",
+        icon:Flask
+    },
     PYTHON: {
         name:"Python",
         class:"rounded-full bg-gray-700 text-white size-7 p-1.5",
@@ -54,7 +60,8 @@ const PROJECTS=[
             TAGS.NEST,
             TAGS.PG,TAGS.GITLAB,
             TAGS.DISCORD,
-            TAGS.PYTHON
+            TAGS.PYTHON,
+            TAGS.FLASK
         ]
     },
     {
