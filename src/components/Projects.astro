@@ -12,6 +12,7 @@ import Colab from "./icons/Colab.astro";
 import Trello from "./icons/Trello.astro";
 import Typescript from "./icons/Typescript.astro";
 import Wordpress from "./icons/Wordpress.astro";
+import React from "./icons/React.astro";
 
 const TAGS = {
     TS: {
@@ -69,6 +70,11 @@ const TAGS = {
         class:"rounded-full bg-gray-700 text-white size-7 p-1.5",
         icon:Wordpress
     },
+    REACT: {
+        name:"React",
+        class:"rounded-full bg-gray-700 text-white size-7 p-1.5",
+        icon:React
+    },
     FB: {
         name:"Firebase",
         class:" rounded-full bg-gray-700 text-white size-7 p-1.5",
@@ -91,6 +97,7 @@ const PROJECTS=[
             TAGS.DISCORD,
             TAGS.GC,
             TAGS.WP,
+            TAGS.REACT,
             TAGS.TRE
         ]
     },
@@ -106,7 +113,7 @@ const PROJECTS=[
         body:"I developed a single-page application (SPA) using WordPress and Hostinger, integrating modern technologies such as React, TypeScript, NestJS, Express, PostgreSQL, and Firebase. Additionally, I built several other SPAs for this company, also based on WordPress and Hostinger, focusing on performance, scalability, and user experience.",
         href: "/robolsolutions.jpg",
         github:"https://robolsolutions.com/",
-        tags:[TAGS.NEST,TAGS.EXP, TAGS.FB, TAGS.WP, TAGS.TS, TAGS.PG]
+        tags:[TAGS.NEST,TAGS.EXP, TAGS.FB, TAGS.WP, TAGS.TS, TAGS.PG, TAGS.REACT]
     },
 
 ]
@@ -118,9 +125,9 @@ const PROJECTS=[
         <h2 class="text-xl font-semibold text-blue-300">{title}</h2>
         <p>{body}</p>
         <h4 class="text-lg font-semibold text-yellow-200/50">Tools:</h4>
-        <ul class="flex flex-row gap-x-3 pb-4" >
+        <ul class="flex flex-wrap gap-3 pb-4 max-w-full" >
             {tags.map((tag) => (
-                <li>{tag.name}</li>
+                <li  class="flex items-center gap-1">{tag.name}</li>
                 <li >
                     <tag.icon class={tag.class}/>
                     
