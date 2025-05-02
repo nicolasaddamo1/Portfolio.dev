@@ -10,8 +10,14 @@ import Python from "./icons/Python.astro";
 import Flask from "./icons/Flask.astro";
 import Colab from "./icons/Colab.astro";
 import Trello from "./icons/Trello.astro";
+import Typescript from "./icons/Typescript.astro";
 
 const TAGS = {
+    TS: {
+        name:"TypeScript",
+        class:"rounded-full bg-gray-700 text-white size-7 p-1.5",
+        icon:Typescript
+    },
     TRE: {
         name:"Trello",
         class:"rounded-full bg-gray-700 text-white size-7 p-1.5",
@@ -71,6 +77,7 @@ const PROJECTS=[
         github:"Private repo at GitLab",
         tags:[
             TAGS.NEST,
+            TAGS.TS,
             TAGS.PG,
             TAGS.PYTHON,
             TAGS.FLASK,
